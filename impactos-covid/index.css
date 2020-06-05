@@ -176,7 +176,7 @@ h1,h2,h3{
     color: #e53935;
 }
 
-/* =========== FundoSections Contéudo ========== */
+/* =========== FUNDO SECTIONS CONTEÚDO ========== */
 
 #geral{
     background: linear-gradient(90deg,rgba(0, 0, 0, 0.9) 0%,rgba(10, 0, 0, 0.7) 65%), url("./images/background/geral.jpeg");
@@ -197,6 +197,19 @@ h1,h2,h3{
     background: linear-gradient(90deg,rgba(0, 0, 0, 0.9) 0%,rgba(10, 0, 0, 0.7) 65%), url("./images/background/meioAmbiente.jpeg");
     background-size: cover;
 }
+
+/* =========== FOOTER ========== */
+
+.s-footer {
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.9),rgba(10, 0, 0, 0.7));
+    color: white;
+}
+
+.s-footer > footer > .container {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* =========== ANIMAÇÕES ========== */
 @keyframes arrow {
     0% {transform: translateY(0px);}
