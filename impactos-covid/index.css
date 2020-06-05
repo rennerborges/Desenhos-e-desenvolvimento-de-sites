@@ -6,15 +6,39 @@
 html,body{
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #100b0c;
 }
 
-/* Cores Textos */
+h1,h2,h3{
+    font-weight: 700;
+}
+
+
+/* =========== CONTAINER ========== */
+.container {
+    width: 1276px;
+    max-width: 100%;
+    padding: 0 35px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width:100%;
+        padding: 0 20px;
+    }
+}
+
+/* =========== CORES TEXTOS ========== */
 
 .text-red{
     color: #b71c1c;
 }
 
-/* Header */
+/* =========== HEADER ========== */
 
 .s-header > header{
     color: white;
@@ -37,9 +61,15 @@ html,body{
 
 .s-header ul > li {
     margin: 0px 15px 0px;
-    font-weight: 500;
+    
     opacity: 0.8;
     cursor: pointer;
+}
+
+.s-header ul > li >a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
 }
 
 .s-header ul > li:hover {
@@ -63,20 +93,21 @@ html,body{
 }
 
 .button-acompanhe > a{
+    color: white;
+    text-decoration: none;
     font-weight: 400;
 }
 
+/* =========== HERO-BANNER ========== */
 
-/* Hero Banner */
-
-.s-hero-banner{
+.s-hero-banner > .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(90deg,rgba(51, 0, 0, 0.9) 0%,rgba(10, 0, 0, 0.7) 65%), url("https://images.unsplash.com/photo-1585858229735-cd08d8cb510d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    background: linear-gradient(90deg,rgba(51, 0, 0, 0.9) 0%,rgba(10, 0, 0, 0.7) 65%), url("./images/background/mapaComPontos.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -101,4 +132,74 @@ html,body{
 .content-hero-banner > p{
     font-size: 14pt;
     margin: 0;
+}
+
+.icon-arrow{
+    position: absolute;
+    bottom: 0;
+}
+
+.icon-arrow > a > img {
+    width: 32px;
+    height: 32px;
+    animation: arrow 0.8s infinite;
+}
+
+/* =========== CONTENT ========== */
+.content-titulos{
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    position: relative;
+    border-radius: 8px;
+    color: white;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.content-titulos > h2{
+    text-align: center;
+    font-size: 30pt;
+    margin: 0;
+}
+
+.body-content p {
+    line-height: 24px;
+}
+
+.body-content p>a, .fontesConteudo{
+    color: #b71c1c;
+    text-decoration: none;
+}
+
+.body-content p>a:hover, .fontesConteudo:hover{
+    color: #e53935;
+}
+
+/* =========== FundoSections Contéudo ========== */
+
+#geral{
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.9) 0%,rgba(10, 0, 0, 0.7) 65%), url("./images/background/geral.jpeg");
+    background-size: cover;
+}
+
+#economia{
+    background: linear-gradient(90deg,rgba(30, 0, 0, 0.9) 0%,rgba(10, 0, 0, 0.7) 65%), url("./images/background/economia.jpeg");
+    background-size: cover;
+}
+
+#saude{
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.9) 0%,rgba(10, 0, 0, 0.7) 65%), url("./images/background/saude.jpeg");
+    background-size: cover;
+}
+
+#meioAmbiente{
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.9) 0%,rgba(10, 0, 0, 0.7) 65%), url("./images/background/meioAmbiente.jpeg");
+    background-size: cover;
+}
+/* =========== ANIMAÇÕES ========== */
+@keyframes arrow {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-5px);}
+    100%{transform: translateY(0px);}
 }
