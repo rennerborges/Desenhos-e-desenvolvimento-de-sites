@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500,700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+/* Cores Textos */
+
+.text-red{
+    color: #b71c1c;
+}
+
+/* Header */
+
+.s-header > header{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+}
+
+.s-header ul {
+    border-left: 2px solid #b71c1c;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin: 0px 10px;
+}
+
+.s-header ul > li {
+    margin: 0px 15px 0px;
+    font-weight: 500;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.s-header ul > li:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.s-header ul > li:first-child {
+    margin-left: 10px;
+}
+
+.button-acompanhe{
+    cursor: pointer;
+    background-color: #b71c1c;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.button-acompanhe:hover{
+    background-color: #e53935;
+}
+
+.button-acompanhe > a{
+    font-weight: 400;
+}
+
+
+/* Hero Banner */
+
+.s-hero-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,rgba(51, 0, 0, 0.9) 0%,rgba(10, 0, 0, 0.7) 65%), url("https://images.unsplash.com/photo-1585858229735-cd08d8cb510d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-hero-banner{
+    width: 70%;
+    color: white;
+}
+
+.content-hero-banner > h2{
+    font-weight: 700;
+    font-size: 40pt;
+    margin: 0;
+}
+
+.content-hero-banner > h3{
+    font-weight: 700;
+    font-size: 20pt;
+    margin: 0;
+}
+
+.content-hero-banner > p{
+    font-size: 14pt;
+    margin: 0;
+}
