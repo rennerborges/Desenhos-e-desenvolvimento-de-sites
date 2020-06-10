@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500,700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #100b0c;
+}
+
+h1,h2,h3{
+    font-weight: 700;
+}
+
+
+/* =========== CONTAINER ========== */
+.container {
+    width: 1276px;
+    max-width: 100%;
+    padding: 0 35px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width:100%;
+        padding: 0 20px;
+    }
+}
+
+/* =========== HERO-BANNER ========== */
+
+.s-hero-banner > .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,rgba(0, 121, 107, 0.9) 10%,rgba(10, 0, 0, 0.7) 65%), url("./imagens/background/meet.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-hero-banner{
+    width: 70%;
+    color: white;
+}
+
+.content-hero-banner > h2{
+    font-weight: 700;
+    font-size: 30pt;
+    margin: 0;
+}
+
+.icon-arrow{
+    position: absolute;
+    bottom: 0;
+}
+
+.icon-arrow > a > img {
+    width: 32px;
+    height: 32px;
+    animation: arrow 0.8s infinite;
+}
+
+
+/* =========== CONTENT ========== */
+
+.s-content {
+    height: 400px;
+        background-color: #e0e0e0;
+}
+
+.s-content > .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s-content > .container > .imagem-content {
+    width: 400px;
+}
+
+.s-content > .container > .imagem-contentMoldura > img{
+    padding: 10px;  
+    padding-bottom: 40px;  
+    background-color: #F5F5F5;  
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.6);  
+    background-image: -webkit-linear-gradient(top, #EEEEEE 85%, #eee);  
+    background-image: -moz-linear-gradient(top, #EEEEEE 85%, #eee);  
+    background-image: linear-gradient(top, #EEEEEE 85%, #eee);  
+    -webkit-transform: rotate(-3deg);  
+    -moz-transform: rotate(-3deg);  
+    transform: rotate(-3deg);  
+}
+.s-content > .container > .body-content {
+    width: 50%;
+}
+
+/* =========== ANIMAÇÕES ========== */
+@keyframes arrow {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-5px);}
+    100%{transform: translateY(0px);}
+}
