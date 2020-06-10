@@ -72,8 +72,14 @@ h1,h2,h3{
 /* =========== CONTENT ========== */
 
 .s-content {
-    height: 400px;
-        background-color: #e0e0e0;
+    height: auto;
+    min-height: 400px;
+    padding: 50px 0px;
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .s-content > .container {
@@ -83,11 +89,11 @@ h1,h2,h3{
     align-items: center;
 }
 
-.s-content > .container > .imagem-content {
+.s-content > .container  .imagem-content {
     width: 400px;
 }
 
-.s-content > .container > .imagem-contentMoldura > img{
+.s-content > .container  .imagem-contentMoldura > img{
     padding: 10px;  
     padding-bottom: 40px;  
     background-color: #F5F5F5;  
@@ -99,8 +105,39 @@ h1,h2,h3{
     -moz-transform: rotate(-3deg);  
     transform: rotate(-3deg);  
 }
-.s-content > .container > .body-content {
+.s-content > .container  .body-content {
     width: 50%;
+}
+
+/* =========== CONTENT ========== */
+
+.utilizando {
+    width: 100%;
+    background-color: white;
+    color: #616161;
+    padding: 30px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow:
+    #A8A8A8 0px 1px 3px 0px,
+    #C3C3C3 0px 1px 1px 0px,
+    #D5D5D5 0px 2px 1px -1px
+}
+
+.utilizando figure {
+    width: 80%;
+}
+
+.utilizando figure > img {
+    border-radius: 8px;
+}
+
+.utilizando figure > figcaption {
+    text-align: center;
 }
 
 /* =========== ANIMAÇÕES ========== */
