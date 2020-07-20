@@ -51,6 +51,7 @@ body {
     transition: 0.5s;
     margin-top: 20px;
     display: inline-block;
+    border: 2px solid white;
 }
 
 .content-text a:hover {
