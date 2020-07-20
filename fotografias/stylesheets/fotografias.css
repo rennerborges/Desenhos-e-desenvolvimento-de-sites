@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.content-img {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content-text {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    padding: 40px;
+    box-sizing: border-box;
+    color: white;
+    width: 35%;
+    text-align: justify;
+}
+
+.content-text h1 {
+    margin: 0;
+}
+
+.content-text p {
+    line-height: 27px;
+}
+
+.content-text a {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #616161;
+    transition: 0.5s;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.content-text a:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.5s;
+}
+
+#fernando {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/img2.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+#edam {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/img1.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+#boyaca {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/img3.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+footer {
+    padding: 15px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+img {
+    border-radius: 2px;
+    box-shadow:
+        #212121 0px 1px 3px 0px,
+        #212121 0px 1px 1px 0px,
+        #212121 0px 2px 1px -1px
+}
