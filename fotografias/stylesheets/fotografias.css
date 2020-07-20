@@ -28,6 +28,9 @@ body {
     color: white;
     width: 35%;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .content-text h1 {
@@ -41,6 +44,7 @@ body {
 .content-text a {
     background-color: white;
     padding: 10px 20px;
+    box-sizing: border-box;
     border-radius: 8px;
     text-decoration: none;
     color: #616161;
