@@ -41,10 +41,34 @@ footer > .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 footer > .container  h2 {
     color: white;
     font-size: 13pt;
     font-weight: 400;
+}
+
+
+footer .streamings {
+    position: absolute;
+    left: 35px;
+    display: flex;
+}
+
+footer .streamings figure {
+    margin: 0px;
+}
+
+footer .streamings a {
+    margin-left: 20px;
+}
+
+footer .streamings a:first-child {
+    margin: 0px;
+}
+
+footer .streamings img {
+    width: 35px;
 }
