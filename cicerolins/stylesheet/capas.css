@@ -126,6 +126,17 @@ header {
     border-top: none;
 }
 
+.s-musicas li:hover a img {
+    opacity: 1;
+    animation: fadein 0.5s;
+}
+
+.s-musicas a img {
+    opacity: 0;
+    width: 31px;
+    float: right;
+}
+
 /* =========== VOLTAR ========== */
 
 .voltar {
@@ -179,4 +190,25 @@ header {
     #A8A8A8 0px 1px 3px 0px,
     #C3C3C3 0px 1px 1px 0px,
     #D5D5D5 0px 2px 1px -1px;
+}
+
+/* =========== ANIMAÇÕES ========== */
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
