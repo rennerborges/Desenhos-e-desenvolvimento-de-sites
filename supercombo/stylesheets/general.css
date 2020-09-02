@@ -4,10 +4,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #212121;
+}
+
 html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -22,12 +26,13 @@ header nav > .container {
     background-color: rgba(85, 62, 105, 0.9);
     color: white;
     position: absolute;
+    z-index: 1;
     align-items: center;
     box-sizing: border-box;
 }
 
 header nav > .container > img {
-    height: 80%;
+    height: 75%;
     border-radius: 8px;
 }
 
@@ -55,12 +60,15 @@ header nav li > a{
     height: 100vh;
     background: linear-gradient(-90deg,rgba(0, 0, 0, 0.4) 35%, rgba(0, 0, 0, 0.4)), url('../images/backgrounds/supercombo.webp');
     background-size: cover;
+    position: relative;
 }
 
 /* =========== ARROW ========== */
 .arrow {
     width: 100%;
     margin: 20px 0px;
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: center;
 }
@@ -69,6 +77,160 @@ header nav li > a{
     width: 30px;
     height: 30px;
     animation: arrow 0.8s infinite;
+}
+
+
+/* =========== INTEGRANTES ========== */
+
+.integrantes, .integrantesReverso {
+    width: 100%;
+    height: 60vh;
+    margin: 30px 0px;
+}
+
+.integrantes > .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.integrantesReverso > .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row-reverse;
+}
+
+.conteudoIntegrante {
+    width: 60%;
+    height: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: rgb(85, 62, 105, 1);
+    color: white;
+    position: relative;
+}
+
+.integrantes .conteudoIntegrante {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.integrantesReverso .conteudoIntegrante {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.conteudoIntegrante footer {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+}
+
+.fundoIntegrante {
+    width: 40%;
+    height: 100%;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.integrantes .fundoIntegrante {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.integrantesReverso .fundoIntegrante {
+    border-radius: 8px 0px 0px 8px;
+}
+
+
+.conteudoIntegrante h1, .conteudoIntegrante h2 {
+    font-weight: 500;
+}
+.conteudoIntegrante p {
+    font-weight: 300;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+.instrumentos {
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+    display: flex;
+}
+
+.item-instrumento figure {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.item-instrumento img {
+    width: 60px;
+    min-width: 60px;
+}
+
+.item-instrumento figcaption > p {
+    font-size: 10pt;
+    letter-spacing: 1px;
+    color: #f3e5f5;
+} 
+
+/* =========== FUNDO PERSONALIZADOS ========== */
+
+#leo .fundoIntegrante {
+    background: linear-gradient(90deg,rgba(85, 62, 105, 1) 1%, rgba(85, 62, 105, 0.1)), url('../images/integrantes/leo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#toledo .fundoIntegrante {
+    background: linear-gradient(-90deg,rgba(85, 62, 105, 1) 1%, rgba(85, 62, 105, 0.1)), url('../images/integrantes/toledo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#navarro .fundoIntegrante {
+    background: linear-gradient(90deg,rgba(85, 62, 105, 1) 1%, rgba(85, 62, 105, 0.1)), url('../images/integrantes/narravo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vaz .fundoIntegrante {
+    background: linear-gradient(-90deg,rgba(85, 62, 105, 1) 1%, rgba(85, 62, 105, 0.1)), url('../images/integrantes/vaz.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#dea .fundoIntegrante {
+    background: linear-gradient(90deg,rgba(85, 62, 105, 1) 1%, rgba(85, 62, 105, 0.1)), url('../images/integrantes/dea.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* =========== RODAPE ========== */
+
+#s-footer {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(85, 62, 105, 1);
+}
+
+#s-footer > .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#s-footer h1 {
+    margin: 0;
+    font-size: 12pt;
+    color: white;
+    font-weight: 400;
 }
 
 /* =========== ANIMAÇÕES ========== */
