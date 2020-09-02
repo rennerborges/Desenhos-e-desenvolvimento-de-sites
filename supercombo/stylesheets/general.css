@@ -132,7 +132,7 @@ header nav li > a:hover{
     background-color: rgb(85, 62, 105, 1);
     color: white;
     position: relative;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .integrantes .conteudoIntegrante {
@@ -152,19 +152,19 @@ header nav li > a:hover{
 
 .integrantes:hover .conteudoIntegrante, .integrantesReverso:hover .conteudoIntegrante{
     width: 50%;
-    transition: 0.5s;
+    transition: 1s;
 } 
 
 .integrantes:hover .fundoIntegrante, .integrantesReverso:hover .fundoIntegrante{
     width: 50%;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .fundoIntegrante {
     width: 40%;
     height: 100%;
     border-radius: 0px 8px 8px 0px;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .integrantes .fundoIntegrante {
