@@ -111,12 +111,23 @@ body {
     padding: 0px 15px;
     box-sizing: border-box;
     background-color: white;
-    box-shadow: 1px 1px 5px 0px #D5D5D5
+    box-shadow: 1px 1px 5px 0px #D5D5D5;
+    transition: 0.4s;
+}
+
+.noticia:hover {
+    transform: scale(1.02);
+    transition: 0.4s;
 }
 
 .noticia h1 {
     font-weight: 500;
     font-size: 15pt;
+}
+
+.noticia h1 > a {
+    text-decoration: none;
+    color: #212121;
 }
 
 .noticia .imagem-noticia {
