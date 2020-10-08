@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* =========== GERAIS =========== */
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 500;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* =========== CONTAINER ========== */
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0px 35px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width:100%;
+        padding: 0 20px;
+    }
+}
+
+/* =========== UTEIS ========== */
+
+.bold {
+    font-weight: 500;
+}
+
+.undelined{
+    text-decoration: underline;
+}
