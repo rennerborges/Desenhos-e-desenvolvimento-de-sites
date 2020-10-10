@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* =========== SCROLL ========== */
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background-color: #424242;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #bdbdbd;
+}
+
+/* =========== CONTAINER ========== */
+
+.container {
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+/* =========== HEADER ========== */
+
+#header {
+    width: 100%;
+    height: 13vh;
+    background: linear-gradient(-90deg,rgba(153, 38, 35,0.6) 35%,rgba(130, 59, 116, 0.6));
+    position: absolute;
+}
+
+#header > .container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-weight: 500;
+}
+
+#header nav {
+    position: absolute;
+    right: 50px;
+}
+
+#header ul {
+    display: flex;
+}
+
+#header ul> li {
+    margin: 0px 5px;
+    list-style-type: none;
+}
+
+#header ul> li> a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+#header ul> li> a:hover {
+    opacity: 1;
+}
+
+/* =========== HERO-BANNER ========== */
+
+#hero-banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0,0.1) 35%,rgba(0, 0, 0, 0.9)), url('../images/backgrounds/pizza.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#hero-banner .content > h1 {
+    font-weight: 700;
+    font-size: 35pt;
+    margin: 25px 0px;
+    letter-spacing: 1px;
+}
+
+#hero-banner .content > h2 {
+    font-weight: 500;
+    font-size: 22pt;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* =========== ARROW ========== */
+.arrow {
+    width: 100%;
+    margin: 20px 0px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow  img{
+    width: 30px;
+    height: 30px;
+    animation: arrow 0.8s infinite;
+}
+
+/* =========== CONTENT ========== */
+
+#content {
+    width: 100%;
+    padding: 50px 0px;
+    box-sizing: border-box;
+    background-color:#f2f2f2;
+}
+
+#content .title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#content .title-content {
+    display: flex;
+    align-items: center;
+}
+
+#content .title figure {
+    margin: 0;
+}
+
+#content .title figure > img {
+    width: 30px;
+}
+
+#content .title h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 23pt;
+}
+
+#content .barra {
+    width: 10%;
+    height: 2px;
+    background: linear-gradient(-90deg,rgba(153, 38, 35,0.6) 35%,rgba(130, 59, 116, 0.6));
+    margin-bottom: 10px;
+}
+
+#pizzas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-pizza {
+    width: 240px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px #D5D5D5;
+    margin: 10px;
+}
+
+.item-pizza figure {
+    margin: 0;
+}
+
+.item-pizza figure > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item-pizza .title {
+    font-weight: 500;
+    text-align: center;
+    font-size: 16pt;
+    margin-bottom: 0;
+}
+
+.item-pizza .description {
+    font-weight: 300;
+    text-align: center;
+}
+
+.item-pizza .value {
+    text-align: center;
+    font-weight: 400;
+}
+
+.item-pizza .observacao {
+    font-weight: 300;
+    font-size: 10pt;
+    text-align: center;
+}
+
+
+/* =========== ANIMAÇÕES ========== */
+@keyframes arrow {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-5px);}
+    100%{transform: translateY(0px);}
+}
