@@ -41,7 +41,7 @@ body {
 #header {
     width: 100%;
     height: 13vh;
-    background: linear-gradient(-90deg,rgba(153, 38, 35,0.6) 35%,rgba(130, 59, 116, 0.6));
+    background: linear-gradient(-90deg,rgba(153, 38, 35,0.8) 35%,rgba(130, 59, 116, 0.8));
     position: absolute;
 }
 
@@ -76,11 +76,13 @@ header h1 {
 #header ul> li> a {
     color: white;
     text-decoration: none;
+    font-weight: 500;
     opacity: 0.8;
 }
 
 #header ul> li> a:hover {
     opacity: 1;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
 }
 
 /* =========== HERO-BANNER ========== */
@@ -91,24 +93,25 @@ header h1 {
     display: flex;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0,0.1) 35%,rgba(0, 0, 0, 0.9)), url('../images/backgrounds/pizza.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     color: white;
+    animation: carrousel-headerBanner 15s infinite;
+
 }
 
 #hero-banner .content > h1 {
     font-weight: 700;
-    font-size: 35pt;
+    font-size: 45pt;
     margin: 25px 0px;
     letter-spacing: 1px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
 }
 
 #hero-banner .content > h2 {
     font-weight: 500;
-    font-size: 22pt;
+    font-size: 25pt;
     margin: 0;
     letter-spacing: 1px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
 }
 
 /* =========== ARROW ========== */
@@ -283,12 +286,29 @@ header h1 {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.4);
     font-style: normal;
+    transition: transform 0.5s;
 }
+
+#enderecos address table:hover {
+    transform: scale(1.03);
+}
+
 
 #enderecos address table caption {
     margin-bottom: 20px;
     font-weight: 500;
     font-size: 15pt;
+}
+
+#enderecos address table caption > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#enderecos address table caption img {
+    width: 30px;
+    animation: arrow 0.6s infinite;
 }
 
 #enderecos address tr {
@@ -304,10 +324,101 @@ header h1 {
     text-align: center;
 }
 
+/* =========== FOOTER ========== */
+
+#s-footer {
+    width: 100%;
+    background: linear-gradient(-90deg,rgba(153, 38, 35,0.6) 35%,rgba(130, 59, 116, 0.6)), url('../images/backgrounds/papelPizza.webp');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 11pt;
+}
+
+#s-footer>.container {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#s-footer h1 {
+    font-weight: 500;
+    margin: 0px;
+}
+
+#s-footer>.container>div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-footer>ul {
+    display: flex;
+}
+
+.address-footer>ul>li {
+    list-style-type: none;
+    margin: 0px 15px;
+}
+
+.address-footer>ul>li>a {
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.address-footer>ul>li>a:hover {
+    opacity: 1;
+    text-shadow: 2px 2px 10px rgba(130, 59, 116, 0.8);
+}
+
 
 /* =========== ANIMAÇÕES ========== */
 @keyframes arrow {
     0% {transform: translateY(0px);}
     50% {transform: translateY(-5px);}
     100%{transform: translateY(0px);}
+}
+
+@keyframes carrousel-headerBanner {
+    10%{
+        background: linear-gradient(rgba(0, 0, 0,0.1) 35%,rgba(0, 0, 0, 0.9)), url('../images/backgrounds/pizza.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    20%{
+        background: linear-gradient(rgba(0, 0, 0,0.1) 35%,rgba(0, 0, 0, 0.9)), url('../images/backgrounds/pizza3.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    40%{
+        background: linear-gradient(rgba(0, 0, 0,0.1) 35%,rgba(0, 0, 0, 0.9)), url('../images/backgrounds/pizza4.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    60%{
+        background: linear-gradient(rgba(0, 0, 0,0.1) 35%,rgba(0, 0, 0, 0.9)), url('../images/backgrounds/pizza5.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    80%{
+        background: linear-gradient(rgba(0, 0, 0,0.1) 35%,rgba(0, 0, 0, 0.9)), url('../images/backgrounds/pizza6.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    100%{
+        background: linear-gradient(rgba(0, 0, 0,0.1) 35%,rgba(0, 0, 0, 0.9)), url('../images/backgrounds/pizza.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 }
