@@ -145,6 +145,7 @@ header h1 {
 #content .title-content {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 #content .title figure {
@@ -157,13 +158,12 @@ header h1 {
 
 #content .title h1 {
     margin: 0;
-    margin-bottom: 10px;
     margin-left: 10px;
     font-size: 23pt;
 }
 
 #content .barra {
-    width: 10%;
+    width: 8%;
     height: 2px;
     background: linear-gradient(-90deg,rgba(153, 38, 35,0.6) 35%,rgba(130, 59, 116, 0.6));
     margin-bottom: 10px;
@@ -213,6 +213,88 @@ header h1 {
     font-weight: 300;
     font-size: 10pt;
     text-align: center;
+}
+
+/* =========== ENDERECOS ========== */
+
+#enderecos {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(-90deg,rgba(153, 38, 35,0.1),rgba(130, 59, 116, 0.6)), url('../images/backgrounds/pizza2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+}
+
+#enderecos > .container{
+    width: 100%;
+}
+
+#enderecos .title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#enderecos .title-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#enderecos .title figure {
+    margin: 0;
+}
+
+#enderecos .title figure > img {
+    width: 30px;
+}
+
+#enderecos .title h1 {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 23pt;
+}
+
+#enderecos .barra {
+    width: 10%;
+    height: 2px;
+    background: linear-gradient(-90deg,rgba(153, 38, 35,0.6) 35%,rgba(130, 59, 116, 0.6));
+    margin-bottom: 10px;
+}
+
+#enderecos address {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#enderecos address table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-style: normal;
+}
+
+#enderecos address table caption {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 15pt;
+}
+
+#enderecos address tr {
+    border-bottom: 1px solid white;
+}
+
+#enderecos address tr:last-child {
+    border-bottom: none;
+}
+
+#enderecos address td, #enderecos address th  {
+    padding: 10px 20px;
 }
 
 
