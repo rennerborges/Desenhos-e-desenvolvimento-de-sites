@@ -295,6 +295,7 @@ header h1 {
 
 #enderecos address td, #enderecos address th  {
     padding: 10px 20px;
+    text-align: center;
 }
 
 
