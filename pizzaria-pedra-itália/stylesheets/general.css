@@ -69,7 +69,7 @@ header h1 {
 }
 
 #header ul> li {
-    margin: 0px 5px;
+    margin: 0px 15px;
     list-style-type: none;
 }
 
@@ -181,6 +181,12 @@ header h1 {
     border-radius: 10px;
     box-shadow: 1px 1px 5px 0px #D5D5D5;
     margin: 10px;
+    transition: transform 0.5s;
+}
+
+.item-pizza:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
 }
 
 .item-pizza figure {
