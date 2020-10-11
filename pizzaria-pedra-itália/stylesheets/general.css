@@ -93,6 +93,9 @@ header h1 {
     display: flex;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0,0.1) 35%,rgba(0, 0, 0, 0.9)), url('../images/backgrounds/pizza.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: white;
     animation: carrousel-headerBanner 15s infinite;
 
