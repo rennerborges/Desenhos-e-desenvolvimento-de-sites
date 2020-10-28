@@ -413,6 +413,13 @@ body {
     margin-bottom: 0;
 }
 
+#background-carro{
+    background: linear-gradient(-90deg,rgba(98, 0, 234,0.3) 35%,rgba(26, 35, 126, 0.3)), url('../images/backgrounds/porsche.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
 /* =========== ENDERECOS ========== */
 
 #enderecos {
@@ -421,10 +428,6 @@ body {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    background: linear-gradient(-90deg,rgba(98, 0, 234,0.3) 35%,rgba(26, 35, 126, 0.3)), url('../images/backgrounds/porsche.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
     color: white;
 }
 
@@ -509,7 +512,7 @@ body {
 
 #s-footer {
     width: 100%;
-    background: linear-gradient(-90deg,rgba(153, 38, 35,0.6) 35%,rgba(130, 59, 116, 0.6)), url('../images/backgrounds/papelPizza.webp');
+    background: linear-gradient(-90deg,rgba(14, 18, 68 ,0.3) 35%,rgba(14, 18, 68, 0.3));
     background-position: center;
     background-size: cover;
     color: white;
@@ -527,6 +530,20 @@ body {
 #s-footer h1 {
     font-weight: 500;
     margin: 0px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+#s-footer h1::before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    display: block;
+    background-image: url('../images/logo/lobinho.webp');
+    background-size: cover;
+    margin-right: 10px;
 }
 
 #s-footer>.container>div {
