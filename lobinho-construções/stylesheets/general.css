@@ -270,9 +270,9 @@ body {
 
 /* =========== CATEGORIAS ========== */
 
-#content {
+#categorias {
     width: 100%;
-    padding: 50px 0px;
+    padding: 25px 0px;
     box-sizing: border-box;
 }
 
