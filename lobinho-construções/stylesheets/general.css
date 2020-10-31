@@ -38,8 +38,8 @@ body {
 }
 
 /* =========== TEXT ========== */
-.text-azul {
-    color: #6200ea;
+.text-vermelho {
+    color: #dc3b38;
 }
 
 /* =========== HEADER ========== */
@@ -260,45 +260,46 @@ body {
     margin: 0;
 }
 
-/* =========== CONTENT ========== */
+/* =========== CATEGORIAS ========== */
 
-#carros-pertos,#content {
+#categorias,#content {
     width: 100%;
     padding: 50px 0px;
     box-sizing: border-box;
-    background-color:#f2f2f2;
 }
 
-#carros-pertos .title , #content .title {
+#categorias .title , #content .title {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-#carros-pertos .title-content, #content .title-content {
+#categorias .title-content, #content .title-content {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-#carros-pertos .title h1, #content .title h1 {
+#categorias .title h1, #content .title h1 {
     margin: 0;
     font-size: 23pt;
 }
 
-#carros-pertos .barra,#content .barra {
+#categorias .barra,#content .barra {
     width: 8%;
     height: 2px;
-    background: linear-gradient(-90deg,rgba(98, 0, 234,0.6) 35%,rgba(26, 35, 126, 0.6));
+    background: linear-gradient(-90deg,rgba(220, 59, 56,0.6) 35%,rgba(104, 19, 18, 0.6));
     margin-bottom: 10px;
 }
 
-#mais-buscados {
+#content-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+
+ /* === */
 .item-carro {
     width: 350px;
     padding: 20px;
@@ -524,7 +525,7 @@ body {
 #enderecos address table {
     border-collapse: collapse;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     font-style: normal;
     transition: transform 0.5s;
 }
@@ -552,7 +553,7 @@ body {
 }
 
 #enderecos address tr {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 #enderecos address tr:last-child {
@@ -630,3 +631,9 @@ body {
     text-shadow: 2px 2px 10px rgba(130, 59, 116, 0.8);
 }
 
+/* =========== ANIMAÇÕES ========== */
+@keyframes arrow {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-5px);}
+    100%{transform: translateY(0px);}
+}
