@@ -1,0 +1,632 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&family=Roboto:wght@300;400;500;700&family=Staatliches&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* =========== SCROLL ========== */
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background-color: #424242;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #bdbdbd;
+}
+
+/* =========== CONTAINER ========== */
+
+.container {
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+/* =========== TEXT ========== */
+.text-azul {
+    color: #6200ea;
+}
+
+/* =========== HEADER ========== */
+
+#header {
+    width: 100%;
+    height: 13vh;
+    background-color: #dc3b38;
+}
+
+#header > .container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header h1 {
+    color: white;
+    font-weight: 500;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header h1::before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    display: block;
+    background-image: url('../images/logo/lobinho.webp');
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#header ul {
+    display: flex;
+}
+
+#header ul> li {
+    margin: 0px 15px;
+    list-style-type: none;
+}
+
+#header ul> li> a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+#header ul> li> a:hover {
+    opacity: 1;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+#header .group-left {
+    display: flex;
+    align-items: center;
+}
+
+.img-button-submit {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-bottom: auto;
+    margin-top: auto;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    padding: 6px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.4s ease;
+}
+
+.img-button-submit:focus {
+  outline: none;
+}
+
+.img-button-submit:hover {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.input-search {
+    width: 300px;
+}
+
+/* =========== INPUT GROUP ========== */
+
+.input-group {
+    position: relative;
+}
+
+.input-group input {
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding: 0px 10px;
+}
+
+.input-group img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-bottom: auto;
+    margin-top: auto;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+/* =========== HERO-BANNER ========== */
+
+#hero-banner {
+    width: 100%;
+    height: 60vh;
+    background-image: url('../images/backgrounds/tintas.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#hero-banner .container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero-banner h1 {
+    font-weight: 700;
+    font-size: 45pt;
+    margin: 5px 0px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+    font-family: 'Heebo', sans-serif;
+}
+
+#hero-banner h2 {
+    font-weight: 500;
+    font-size: 25pt;
+    margin: 0;
+    letter-spacing: 1px;
+    font-family: 'Heebo', sans-serif;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+
+/* =========== CHAMATIVOS ========== */
+
+#chamativos {
+    width: 100%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+.content-chamativos {
+    display: flex;
+    justify-content: center;
+}
+
+.item-chamativos {
+    width: 260px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #dc3b38;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.item-chamativos-2 {
+    background-color: #dc3b38;
+    border: 2px solid #dc3b38;
+    color: white;
+}
+
+.item-chamativos > div {
+    margin-left: 10px;
+}
+
+.item-chamativos figure {
+    margin: 0;
+    height: 40px;
+}
+
+.item-chamativos figure > img {
+    height: 100%;
+}
+
+.item-chamativos h1 {
+    font-weight: 400;
+    font-size: 12pt;
+    margin: 0;
+}
+
+.item-chamativos h2 {
+    font-weight: 500;
+    font-size: 11pt;
+    color: #dc3b38;
+    margin: 0;
+}
+
+/* =========== CONTENT ========== */
+
+#carros-pertos,#content {
+    width: 100%;
+    padding: 50px 0px;
+    box-sizing: border-box;
+    background-color:#f2f2f2;
+}
+
+#carros-pertos .title , #content .title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#carros-pertos .title-content, #content .title-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#carros-pertos .title h1, #content .title h1 {
+    margin: 0;
+    font-size: 23pt;
+}
+
+#carros-pertos .barra,#content .barra {
+    width: 8%;
+    height: 2px;
+    background: linear-gradient(-90deg,rgba(98, 0, 234,0.6) 35%,rgba(26, 35, 126, 0.6));
+    margin-bottom: 10px;
+}
+
+#mais-buscados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item-carro {
+    width: 350px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px #D5D5D5;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+.item-carro .img-car {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.item-carro:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+.item-carro .title {
+    font-weight: 500;
+    text-align: center;
+    font-size: 15pt;
+    margin-bottom: 0;
+}
+
+.item-carro .subtitle {
+    font-weight: 400;
+    text-align: center;
+    font-size: 11pt;
+    margin: 10px 0px;
+}
+
+.item-carro .description {
+    font-weight: 300;
+    text-align: center;
+}
+
+.item-carro .value {
+    text-align: center;
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+.item-carro .localizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-carro .localizacao p {
+    font-size: 10pt;
+    margin: 0;
+}
+
+.item-carro .localizacao > figure {
+    margin: 0;
+    margin-right: 4px;
+    width: 15px;
+    height: 15px;
+}
+
+.item-carro .localizacao > figure > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item-carro .observacao {
+    font-weight: 300;
+    font-size: 10pt;
+    text-align: center;
+}
+
+.item-carro .informacoes {
+    display: flex;
+}
+
+.item-carro .informacoes div {
+    width: calc(100% - 5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #6200ea;
+    border-radius: 5px;
+}
+
+.item-carro .informacoes div figure {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.item-carro .informacoes div figure > img {
+    margin: 0;
+    width: 100%;
+}
+
+.item-carro .informacoes p {
+    margin: 0;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.item-carro .informacoes .ano {
+    margin-right: 5px;
+}
+
+.item-carro .informacoes .km-rodados {
+    margin-left: 5px;
+}
+
+/* =========== CARROS ========== */
+
+#fox {
+    background-image: url('../images/carros/fox.jpeg');
+    background-size: cover;
+}
+
+#fit {
+    background-image: url('../images/carros/fit.png');
+    background-size: cover;
+}
+
+#hb20 {
+    background-image: url('../images/carros/hb20.jpeg');
+    background-size: cover;
+}
+
+#p208 {
+    background-image: url('../images/carros/208.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#argo {
+    background-image: url('../images/carros/argo.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+#up {
+    background-image: url('../images/carros/up.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#ka {
+    background-image: url('../images/carros/ka.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#sandero {
+    background-image: url('../images/carros/sandero.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+#kia {
+    background-image: url('../images/carros/kia.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* =========== TIJOLOS ========== */
+
+
+#background-tijolo{
+    background: linear-gradient(-90deg,rgba(220, 59, 56,0.4) 35%,rgba(50, 0, 0, 0.5)), url('../images/backgrounds/tijolos.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* =========== ENDERECOS ========== */
+
+#enderecos {
+    width: 100%;
+    padding: 50px 0px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#enderecos > .container{
+    width: 100%;
+}
+
+#enderecos .title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#enderecos .title-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#enderecos .title h1 {
+    margin: 0;
+    font-size: 23pt;
+}
+
+#enderecos .barra {
+    width: 10%;
+    height: 2px;
+    background: linear-gradient(-90deg,rgba(98, 0, 234,1) 35%,rgba(26, 35, 126, 1));
+    margin-bottom: 10px;
+}
+
+#enderecos address {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#enderecos address table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-style: normal;
+    transition: transform 0.5s;
+}
+
+#enderecos address table:hover {
+    transform: scale(1.03);
+}
+
+
+#enderecos address table caption {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 15pt;
+}
+
+#enderecos address table caption > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#enderecos address table caption img {
+    width: 30px;
+    animation: arrow 0.6s infinite;
+}
+
+#enderecos address tr {
+    border-bottom: 1px solid white;
+}
+
+#enderecos address tr:last-child {
+    border-bottom: none;
+}
+
+#enderecos address td, #enderecos address th  {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* =========== FOOTER ========== */
+
+#s-footer {
+    width: 100%;
+    background: linear-gradient(-90deg,rgba(25, 0, 0 ,0.5) 35%,rgba(25, 0, 0, 0.7));
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 11pt;
+}
+
+#s-footer>.container {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#s-footer h1 {
+    font-weight: 500;
+    margin: 0px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+#s-footer h1::before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    display: block;
+    background-image: url('../images/logo/lobinho.webp');
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#s-footer>.container>div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-footer>ul {
+    display: flex;
+}
+
+.address-footer>ul>li {
+    list-style-type: none;
+    margin: 0px 15px;
+}
+
+.address-footer>ul>li>a {
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.address-footer>ul>li>a:hover {
+    opacity: 1;
+    text-shadow: 2px 2px 10px rgba(130, 59, 116, 0.8);
+}
+
