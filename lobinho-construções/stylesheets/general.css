@@ -377,12 +377,12 @@ body {
 }
 
 #categoria-ferramentasConstrucao {
-    background-image: url('../images/categorias/telhas.webp');
+    background-image: url('../images/categorias/equp_construcao.webp');
     background-size: cover;
 }
 
 #categoria-telhas {
-    background-image: url('../images/categorias/equp_construcao.webp');
+    background-image: url('../images/categorias/telhas.webp');
     background-size: cover;
 }
 
