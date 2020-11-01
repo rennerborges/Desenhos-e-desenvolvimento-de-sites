@@ -33,6 +33,8 @@ body {
 /* =========== CONTAINER ========== */
 
 .container {
+    max-width: 1500px;
+    margin: 0 auto;
     padding: 0px 50px;
     box-sizing: border-box;
 }
@@ -276,24 +278,24 @@ body {
     box-sizing: border-box;
 }
 
-#categorias .title , #content .title {
+#categorias .title , #produtos .title {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-#categorias .title-content, #content .title-content {
+#categorias .title-content, #produtos .title-content {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-#categorias .title h1, #content .title h1 {
+#categorias .title h1, #produtos .title h1 {
     margin: 0;
     font-size: 23pt;
 }
 
-#categorias .barra,#content .barra {
+#categorias .barra,#produtos .barra {
     width: 8%;
     height: 2px;
     background: linear-gradient(-90deg,rgba(220, 59, 56,0.6) 35%,rgba(104, 19, 18, 0.6));
@@ -386,9 +388,15 @@ body {
     background-size: cover;
 }
 
- /* === */
-.item-carro {
-    width: 350px;
+ /* =========== PRODUTOS ========== */
+#produtos {
+    width: 100%;
+    padding: 0px 0px 35px;
+    box-sizing: border-box;
+}
+
+.item-produtos {
+    width: 250px;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -397,161 +405,94 @@ body {
     transition: transform 0.5s;
 }
 
-.item-carro .img-car {
+.item-produtos .img-produtos {
     width: 100%;
-    height: 200px;
+    height: 250px;
     border-radius: 5px;
 }
 
-.item-carro:hover {
+.item-produtos:hover {
     transform: scale(1.03);
     transition: 0.5s;
 }
 
-.item-carro .title {
+.item-produtos .title {
     font-weight: 500;
-    text-align: center;
     font-size: 15pt;
     margin-bottom: 0;
+    color: #a2a2a2;
 }
 
-.item-carro .subtitle {
+.item-produtos .subtitle {
     font-weight: 400;
-    text-align: center;
     font-size: 11pt;
     margin: 10px 0px;
 }
 
-.item-carro .description {
+.item-produtos .description {
     font-weight: 300;
     text-align: center;
 }
 
-.item-carro .value {
-    text-align: center;
+.item-produtos .value {
     font-size: 18pt;
     font-weight: 500;
+    margin-bottom: 0;
 }
 
-.item-carro .localizacao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.item-produtos .sub-value {
+    font-size: 11pt;
+    font-weight: 300;
+    margin-top: 5px;
+    color: #a2a2a2;
 }
 
-.item-carro .localizacao p {
-    font-size: 10pt;
-    margin: 0;
-}
-
-.item-carro .localizacao > figure {
-    margin: 0;
-    margin-right: 4px;
-    width: 15px;
-    height: 15px;
-}
-
-.item-carro .localizacao > figure > img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.item-carro .observacao {
+.item-produtos .observacao {
     font-weight: 300;
     font-size: 10pt;
-    text-align: center;
 }
 
-.item-carro .informacoes {
-    display: flex;
-}
 
-.item-carro .informacoes div {
-    width: calc(100% - 5px);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #6200ea;
-    border-radius: 5px;
-}
+/* =========== PRODUTOS IMG ========== */
 
-.item-carro .informacoes div figure {
-    margin: 0;
-    width: 20px;
-    height: 20px;
-}
-
-.item-carro .informacoes div figure > img {
-    margin: 0;
-    width: 100%;
-}
-
-.item-carro .informacoes p {
-    margin: 0;
-    padding: 5px 0px;
-    box-sizing: border-box;
-    color: white;
-}
-
-.item-carro .informacoes .ano {
-    margin-right: 5px;
-}
-
-.item-carro .informacoes .km-rodados {
-    margin-left: 5px;
-}
-
-/* =========== CARROS ========== */
-
-#fox {
-    background-image: url('../images/carros/fox.jpeg');
+#produto-quartzolit {
+    background-image: url('../images/produtos/quartzolit.webp');
     background-size: cover;
 }
 
-#fit {
-    background-image: url('../images/carros/fit.png');
+
+#produto-quartzolit-2 {
+    background-image: url('../images/produtos/quartzolit-2.webp');
     background-size: cover;
 }
 
-#hb20 {
-    background-image: url('../images/carros/hb20.jpeg');
+#produto-casalit {
+    background-image: url('../images/produtos/casalit.webp');
     background-size: cover;
 }
 
-#p208 {
-    background-image: url('../images/carros/208.jpg');
+#produto-thompson {
+    background-image: url('../images/produtos/thompson.webp');
     background-size: cover;
-    background-position: center;
 }
 
-#argo {
-    background-image: url('../images/carros/argo.jpeg');
+#produto-extracrill {
+    background-image: url('../images/produtos/extracrill.webp');
     background-size: cover;
-    background-position: center;
+}
+#produto-drt {
+    background-image: url('../images/produtos/drt.webp');
+    background-size: cover;
 }
 
-#up {
-    background-image: url('../images/carros/up.jpg');
+#produto-fibromar {
+    background-image: url('../images/produtos/fibromar.webp');
     background-size: cover;
-    background-position: center;
 }
 
-#ka {
-    background-image: url('../images/carros/ka.jpg');
+#produto-poty {
+    background-image: url('../images/produtos/poty.webp');
     background-size: cover;
-    background-position: center;
-}
-
-#sandero {
-    background-image: url('../images/carros/sandero.jpeg');
-    background-size: cover;
-    background-position: center;
-}
-
-#kia {
-    background-image: url('../images/carros/kia.jpg');
-    background-size: cover;
-    background-position: center;
 }
 
 /* =========== TIJOLOS ========== */
