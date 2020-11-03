@@ -1,0 +1,71 @@
+.input-textfield-outlined {
+    position: relative;
+}
+
+.input-textfield-outlined input, .input-textfield-outlined select {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    border: 2px solid #a2a2a2;
+    background-color: white;
+    border-radius: 5px;
+    height: 45px;
+    width: 250px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    padding: 0px 10px;
+    box-sizing: border-box;
+
+}
+
+.input-textfield-outlined textarea {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    border: 2px solid #a2a2a2;
+    background-color: white;
+    border-radius: 5px;
+    width: 250px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.input-textfield-outlined span {
+    position: absolute;
+    left: 10px;
+    top: -25px;
+    font-size: 11pt;
+    background-color: white;
+    padding: 5px;
+    color: #a2a2a2;
+    transition: color 0.3s ease;
+}
+
+.input-textfield-outlined select ~ span {
+    top: -14px;
+}
+
+.input-textfield-outlined textarea ~ span {
+    top: -173px;
+}
+
+.input-textfield-outlined input:hover~span,
+.input-textfield-outlined input:focus~span,
+.input-textfield-outlined select:hover~span,
+.input-textfield-outlined select:focus~span
+.input-textfield-outlined textarea:hover~span,
+.input-textfield-outlined textarea:focus~span {
+    color: #fa0;
+}
+
+.input-textfield-outlined input:hover,
+.input-textfield-outlined input:focus,
+.input-textfield-outlined select:hover,
+.input-textfield-outlined select:focus
+.input-textfield-outlined textarea:hover,
+.input-textfield-outlined textarea:focus {
+    border-color: #fa0;
+}

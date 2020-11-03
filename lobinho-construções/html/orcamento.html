@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="../stylesheets/general.css">
     <link rel="stylesheet" href="../stylesheets/orcamento.css">
+    <link rel="stylesheet" href="../stylesheets/input.css">
+
 
     <link rel="shortcut icon" href="../images/logo/lobinho.webp"/>
 
@@ -94,49 +96,58 @@
                     <h2 class="title-card">Dados pessoais</h2>
 
                     <div class="group-inputs">
-                        <div class="input-orcamento">
-                            <input type="text" name="nome" maxlength="40" placeholder="Liliany">
-                        </div>
-
-                        <div class="input-orcamento">
-                            <input type="text" name="sobrenome" maxlength="40" placeholder="Nunes">
-                        </div>
+                        <label class="input-textfield-outlined">
+                            <input type="text" name="nome">
+                            <span>Nome</span>
+                        </label>
+                    
+                        <label class="input-textfield-outlined">
+                            <input type="text" name="sobrenome">
+                            <span>Sobrenome</span>
+                        </label>
                     </div>
 
-                    <div class="input-orcamento">
-                        <input type="date" name="nascimento">
+                    <div class="group-inputs">
+                        <label class="input-textfield-outlined">
+                            <input type="date" name="nascimento">
+                            <span>Data de nascimento</span>
+                        </label>
                     </div>
 
-                    <div class="input-orcamento">
-                        <input type="tell" name="telefone" placeholder="(64) 99999-9999">
+                    <div class="group-inputs">
+                        <label class="input-textfield-outlined">
+                            <input type="tell" name="telefone">
+                            <span>Telefone</span>
+                        </label>
                     </div>
 
-                    <div class="input-orcamento">
-                        <input type="email" name="email" placeholder="lobinho@alcateia.com">
-                    </div>
+                    <label class="input-textfield-outlined">
+                        <input type="email" name="email">
+                        <span>E-mail</span>
+                    </label>
 
-                    <div class="group-inputs-radios">
+                    <div class="group-inputs group-inputs-radios">
                         <h2>Sexo:</h2>
                         <label>
-                            <input type="radio" value="M"> Masculino
+                            <input type="radio" name="sexo" value="M"> Masculino
                         </label>
                         <label>
-                            <input type="radio" value="F"> Feminino
+                            <input type="radio" name="sexo" value="F"> Feminino
                         </label>
                         <label>
-                            <input type="radio" value="O"> Outros
+                            <input type="radio" name="sexo" value="O"> Outros
                         </label>
                     </div>
 
-                    <div class="input-orcamento">
+                    <label class="input-textfield-outlined">
                         <input type="text" name="profissao" maxlength="40" placeholder="Pedreiro">
-                    </div>
+                        <span>Profissão</span>
+                    </label>
                 </div>
 
                 <div class="card" id="endereco">
                     <h2 class="title-card">Endereço</h2>
-                    <label class="group-select">
-                        <span>Estado</span>
+                    <label class="group-select input-textfield-outlined">
                         <select name="estado">
                             <optgroup label="Sudeste">
                                 <option value="SP">São Paulo</option>
@@ -147,40 +158,53 @@
                                 <option value="GO" selected>Goías</option>
                             </optgroup>
                         </select>
+                        <span>Estado</span>
                     </label>
 
-                    <label class="group-select">
-                        <span>Cidade</span>
-                        <select name="estado">
-                            <optgroup label="Sudeste">
-                                <option value="SP">São Paulo</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="vitoria">Vitoria</option>
-                            </optgroup>
-                            <optgroup label="Centro Oeste">
-                                <option value="goiania" selected>Goíania</option>
-                            </optgroup>
-                        </select>
+                    <div class="group-inputs">
+                        <label class="group-select input-textfield-outlined">
+                            <select name="estado">
+                                <optgroup label="Sudeste">
+                                    <option value="SP">São Paulo</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="vitoria">Vitoria</option>
+                                </optgroup>
+                                <optgroup label="Centro Oeste">
+                                    <option value="goiania" selected>Goíania</option>
+                                </optgroup>
+                            </select>
+                            <span>Cidade</span>
+                        </label>
+                    </div>
+
+                    <div class="group-inputs">
+                        <label class="input-textfield-outlined">
+                            <input type="text" name="bairro" maxlength="70" placeholder="Jd.America">
+                            <span>Bairro</span>
+                        </label>
+                    </div>
+
+                    <div class="group-inputs">
+                        <label class="input-textfield-outlined">
+                            <input type="number" name="numero" min="0" placeholder="Ex: 14">
+                            <span>Número</span>
+                        </label>
+                    </div>
+
+                    <label class="input-textfield-outlined">
+                        <input type="text" name="complemento" maxlength="100" placeholder="Ex: Perto da rodoviaria">
+                        <span>Complemento</span>
                     </label>
 
-                    <div class="input-orcamento">
-                        <input type="text" name="bairro" maxlength="70" placeholder="Bairro">
-                    </div>
-
-                    <div class="input-orcamento">
-                        <input type="number" name="numero" min="0" placeholder="Número">
-                    </div>
-
-                    <div class="input-orcamento">
-                        <input type="text" name="complemento" maxlength="100" placeholder="Complemento">
-                    </div>
 
                 </div>
 
                 <div class="card" id="itens">
                     <h2 class="title-card">Itens</h2>
-
-                    <textarea name="itens" cols="30" rows="5" placeholder="Informe os itens"></textarea>
+                    <label class="input-textfield-outlined">
+                        <textarea name="itens" cols="30" rows="10" placeholder="Informe os itens"></textarea>
+                        <span>Produtos</span>
+                    </label>
                 
                     <div class="group-inputs-checkbox">
                         <h2>Brindes</h2>
