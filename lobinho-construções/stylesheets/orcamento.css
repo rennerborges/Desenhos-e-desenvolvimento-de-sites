@@ -4,6 +4,15 @@ body {
     background-color: #fafafa;
 }
 
+/* =========== ORÇAMENTO ========== */
+
+.orcamento {
+    background: linear-gradient(-90deg,rgba(0, 0, 0,0.3) 35%,rgba(0, 0, 0, 0.6)), url('../images/backgrounds/money.jpeg') !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
 /* =========== CARD ========== */
 .card {
     width: 100%;
