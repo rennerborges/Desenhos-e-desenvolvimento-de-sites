@@ -55,7 +55,7 @@
 .input-textfield-outlined input:hover~span,
 .input-textfield-outlined input:focus~span,
 .input-textfield-outlined select:hover~span,
-.input-textfield-outlined select:focus~span
+.input-textfield-outlined select:focus~span,
 .input-textfield-outlined textarea:hover~span,
 .input-textfield-outlined textarea:focus~span {
     color: #fa0;
@@ -64,7 +64,7 @@
 .input-textfield-outlined input:hover,
 .input-textfield-outlined input:focus,
 .input-textfield-outlined select:hover,
-.input-textfield-outlined select:focus
+.input-textfield-outlined select:focus,
 .input-textfield-outlined textarea:hover,
 .input-textfield-outlined textarea:focus {
     border-color: #fa0;
