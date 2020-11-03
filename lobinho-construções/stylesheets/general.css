@@ -164,6 +164,10 @@ body {
     box-sizing: border-box;
 }
 
+.input-group input:focus, .input-group input:hover {
+    box-shadow: 1px 1px 5px 0px #bdbdbd;
+}
+
 /* =========== HERO-BANNER ========== */
 
 #hero-banner {
@@ -245,7 +249,7 @@ body {
 }
 
 .item-chamativos figure, .item-chamativos-clicaveis a figure {
-    margin: 0;
+    margin: 0px 0px 0px 5px;
     height: 40px;
 }
 
@@ -452,7 +456,6 @@ body {
     font-size: 10pt;
 }
 
-
 /* =========== PRODUTOS IMG ========== */
 
 #produto-quartzolit {
@@ -493,6 +496,72 @@ body {
 #produto-poty {
     background-image: url('../images/produtos/poty.webp');
     background-size: cover;
+}
+
+ /* =========== CONTATO ========== */
+
+#contato {
+    padding-bottom: 35px;
+    box-sizing: border-box;
+}
+
+#contato > section {
+    background-color: #dc3b38;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#contato address {
+    font-style: normal;
+    display: flex;
+    align-items: center;
+}
+
+#contato .content-contato {
+    display: flex;
+    margin-right: 20px;
+}
+
+#contato .content-contato img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#contato .content-contato h1 {
+    font-weight: 400;
+    color: white;
+}
+
+
+#contato form {
+    display: flex;
+}
+
+#contato form .input-group {
+    margin-right: 10px;
+}
+
+#contato form input[type="submit"] {
+    background-color: #fa0;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+#contato form input[type="submit"]:focus {
+    outline: none;
+    background-color: #d18b00;
+}
+
+#contato form input[type="submit"]:hover {
+    background-color: #d18b00;
 }
 
 /* =========== TIJOLOS ========== */

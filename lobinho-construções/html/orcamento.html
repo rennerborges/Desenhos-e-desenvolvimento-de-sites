@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobinhos Construções</title>
+
+    <link rel="stylesheet" href="../stylesheets/general.css">
+    <link rel="stylesheet" href="../stylesheets/orcamento.css">
+
+    <link rel="shortcut icon" href="../images/logo/lobinho.webp"/>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <h1>Lobinhos Construções</h1>
+            <div class="group-left">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#content">Mais buscados</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="chamativos">
+        <div class="container">
+            <section class="content-chamativos">
+                
+                <article class="item-chamativos-clicaveis">
+                    <a href="#dadosPessoais">
+                        <figure>
+                            <img src="../images/icons/account_circle.svg" alt="Icone de contato">
+                        </figure>
+                        <div>
+                            <h1>Dados pessoais</h1>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="item-chamativos-clicaveis">
+                    <a href="#endereco">
+                        <figure>
+                            <img src="../images/icons/localizacao.svg" alt="Icone de endereço" width="33">
+                        </figure>
+                        <div>
+                            <h1>Endereço</h1>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="item-chamativos-clicaveis">
+                    <a href="#itens">
+                        <figure>
+                            <img src="../images/icons/shopping_cart.svg" alt="Icone de itens" width="33">
+                        </figure>
+                        <div>
+                            <h1>Itens</h1>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="item-chamativos-clicaveis">
+                    <a href="#tipoEntrega">
+                        <figure>
+                            <img src="../images/icons/home.svg" alt="Icone de tipo de entrega">
+                        </figure>
+                        <div>
+                            <h1>Tipo de entrega</h1>
+                        </div>
+                    </a>
+                </article>
+
+            </section>
+        </div>
+    </section>
+
+    <section #form>
+        <div class="container">
+            <form method="POST">
+                <div class="card" id="dadosPessoais">
+                    <h2 class="title-card">Dados pessoais</h2>
+
+                    <div class="group-inputs">
+                        <div class="input-orcamento">
+                            <input type="text" name="nome" maxlength="40" placeholder="Liliany">
+                        </div>
+
+                        <div class="input-orcamento">
+                            <input type="text" name="sobrenome" maxlength="40" placeholder="Nunes">
+                        </div>
+                    </div>
+
+                    <div class="input-orcamento">
+                        <input type="date" name="nascimento">
+                    </div>
+
+                    <div class="input-orcamento">
+                        <input type="tell" name="telefone" placeholder="(64) 99999-9999">
+                    </div>
+
+                    <div class="input-orcamento">
+                        <input type="email" name="email" placeholder="lobinho@alcateia.com">
+                    </div>
+
+                    <div class="group-inputs-radios">
+                        <h2>Sexo:</h2>
+                        <label>
+                            <input type="radio" value="M"> Masculino
+                        </label>
+                        <label>
+                            <input type="radio" value="F"> Feminino
+                        </label>
+                        <label>
+                            <input type="radio" value="O"> Outros
+                        </label>
+                    </div>
+
+                    <div class="input-orcamento">
+                        <input type="text" name="profissao" maxlength="40" placeholder="Pedreiro">
+                    </div>
+                </div>
+
+                <div class="card" id="endereco">
+                    <h2 class="title-card">Endereço</h2>
+                    <label class="group-select">
+                        <span>Estado</span>
+                        <select name="estado">
+                            <optgroup label="Sudeste">
+                                <option value="SP">São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="ES">Espirito Santos</option>
+                            </optgroup>
+                            <optgroup label="Centro Oeste">
+                                <option value="GO" selected>Goías</option>
+                            </optgroup>
+                        </select>
+                    </label>
+
+                    <label class="group-select">
+                        <span>Cidade</span>
+                        <select name="estado">
+                            <optgroup label="Sudeste">
+                                <option value="SP">São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="vitoria">Vitoria</option>
+                            </optgroup>
+                            <optgroup label="Centro Oeste">
+                                <option value="goiania" selected>Goíania</option>
+                            </optgroup>
+                        </select>
+                    </label>
+
+                    <div class="input-orcamento">
+                        <input type="text" name="bairro" maxlength="70" placeholder="Bairro">
+                    </div>
+
+                    <div class="input-orcamento">
+                        <input type="number" name="numero" min="0" placeholder="Número">
+                    </div>
+
+                    <div class="input-orcamento">
+                        <input type="text" name="complemento" maxlength="100" placeholder="Complemento">
+                    </div>
+
+                </div>
+
+                <div class="card" id="itens">
+                    <h2 class="title-card">Itens</h2>
+
+                    <textarea name="itens" cols="30" rows="5" placeholder="Informe os itens"></textarea>
+                
+                    <div class="group-inputs-checkbox">
+                        <h2>Brindes</h2>
+
+                        <label>
+                            <input type="checkbox" name="brindes" value="chaveiro"> Chaveiro
+                        </label>
+                        <label>
+                            <input type="checkbox" name="brindes" value="bone"> Boné
+                        </label>
+                        <label>
+                            <input type="checkbox" name="brindes" value="camisa"> Camisa
+                        </label>
+                    </div>
+                </div>
+
+                <div class="card" id="tipoEntrega">
+                    <h2 class="title-card">Tipos de entrega</h2>
+                    <div class="group-inputs-radios">
+                        <label>
+                            <input type="radio" name="tipoEntrega" value="retirar na loja"> Retirar na loja
+                        </label>
+                        <label>
+                            <input type="radio" name="tipoEntrega" value="correio"> Correio
+                        </label>
+                        <label>
+                            <input type="radio" name="tipoEntrega" value="entregaPersonalizada"> Entrega Personalizada
+                        </label>
+                    </div>
+    
+                    <input type="submit" value="Enviar">
+
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <section id="background-tijolo">
+        <footer id="s-footer">
+            <div class="container">
+                <h1>Lobinhos Construções</h1>
+                <div>
+                    <p>&copy; Copyright 2020 Renner Products</p>
+                    <address class="address-footer">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/RennerBorges">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/renner.borges.52">Facebook</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+    
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>

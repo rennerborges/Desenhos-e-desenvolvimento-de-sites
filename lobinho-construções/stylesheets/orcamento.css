@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    background-color: #fafafa;
+}
+
+/* =========== CARD ========== */
+.card {
+    width: 100%;
+    background-color: white;
+    box-shadow:
+        #A8A8A8 0px 1px 3px 0px,
+        #C3C3C3 0px 1px 1px 0px,
+        #D5D5D5 0px 2px 1px -1px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.card .title-card{
+    margin: 0;
+    margin-bottom: 20px;
+    color: #424242;
+}
+
+/* =========== GROUP ========== */
+
+.group-inputs-checkbox, .group-inputs-radios,.group-select {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    color: #424242;
+}
+
+.group-select span {
+    margin-bottom: 5px;
+}
+
+.group-inputs-checkbox h2, .group-inputs-radios h2 {
+    font-weight: 400;
+    font-size: 14pt;
+    margin: 0;
+    margin-bottom: 5px;
+    color: #424242;
+}
